@@ -97,16 +97,16 @@ if has("cscope")
 endif
 
 
-Bundle 'vim-scripts/winmanager' "vim 目录树插件 集成了 Tlist ,NERDTreeToggle
+Plugin 'vim-scripts/winmanager' "vim 目录树插件 集成了 Tlist ,NERDTreeToggle
 let g:winManagerWindowLayout='FileExplorer|TagList'
 nmap wm :WMToggle<cr>
 
 
-Bundle 'EasyGrep'	"vim Grep 插件
+Plugin 'EasyGrep'	"vim Grep 插件
 
-Bundle 'Shougo/neocomplete.vim' "智能补全插件
+Plugin 'Shougo/neocomplete.vim' "智能补全插件
 
-Bundle 'tacahiroy/ctrlp-funky' "显示 文件函数插件  <leader>fu
+Plugin 'tacahiroy/ctrlp-funky' "显示 文件函数插件  <leader>fu
 nnoremap <Leader>fu :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
